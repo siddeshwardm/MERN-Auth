@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Snowfall from 'react-snowfall';
 
 import Login from "./components/Login";
 import Register from "./components/Register";
@@ -7,6 +8,7 @@ import Welcome from "./components/Welcome";
 
 function App() {
   return (
+    <><Snowfall />
     <BrowserRouter>
       <Routes>
 
@@ -20,7 +22,7 @@ function App() {
         <Route path="/welcome" element={<Welcome />} />
 
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter></>
   );
 }
 
